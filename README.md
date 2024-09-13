@@ -7,7 +7,7 @@
 
 ## Overview
 
-This project is a **login and registration system** built with **Angular** and **TypeScript**, using **JWT (JSON Web Tokens)** for authentication. It is designed to integrate seamlessly with my [**login-auth-api**](https://github.com/PedroSmaxY/login-auth-api), which handles backend services such as user registration, login, and authentication management.
+This project is a **login and registration system** built with **Angular** and **TypeScript**, using **JWT (JSON Web Tokens)** for authentication. It is designed to integrate seamlessly with my [**login-auth-api**](https://github.com/PedroSmaxY/login-auth-api), which handles backend services such as user registration, login, and authentication management. You can check the site [here](https://pedrosmaxy.github.io/angular-login-page/).
 
 ## Table of Contents
 
