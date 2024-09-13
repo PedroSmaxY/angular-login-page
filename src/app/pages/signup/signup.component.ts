@@ -11,8 +11,15 @@ import { Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
 
+interface SignupForm {
+  name: FormControl;
+  email: FormControl;
+  password: FormControl;
+  passwordConfirm: FormControl;
+}
+
 @Component({
-  selector: 'app-login',
+  selector: 'app-signup',
   standalone: true,
   imports: [
     DefaultLoginLayoutComponent,
@@ -20,20 +27,26 @@ import { ToastrService } from 'ngx-toastr';
     PrimaryInputComponent,
   ],
   providers: [LoginService],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss',
+  templateUrl: './signup.component.html',
+  styleUrl: './signup.component.scss',
 })
-export class LoginComponent {
-  loginForm!: FormGroup;
+export class SignupComponent {
+  signupForm!: FormGroup<SignupForm>;
 
   constructor(
     private router: Router,
     private loginService: LoginService,
     private toastrService: ToastrService
   ) {
-    this.loginForm = new FormGroup({
+    this.signupForm = new FormGroup({
+      name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [
+        Validators.required,
+        Validators.minLength(6),
+      ]),
+      passwordConfirm: new FormControl('', [
         Validators.required,
         Validators.minLength(6),
       ]),
@@ -41,20 +54,30 @@ export class LoginComponent {
   }
 
   submit() {
+    if (
+      this.signupForm.value.password !== this.signupForm.value.passwordConfirm
+    ) {
+      this.toastrService.error('Passwords do not match');
+      return;
+    }
     this.loginService
-      .login(this.loginForm.value.email, this.loginForm.value.password)
+      .signup(
+        this.signupForm.value.name,
+        this.signupForm.value.email,
+        this.signupForm.value.password
+      )
       .subscribe({
         next: () => {
-          this.toastrService.success('Login successful');
+          this.toastrService.success('Signup successful');
           this.router.navigate(['/user']);
         },
         error: (error) => {
-          this.toastrService.error('Login failed');
+          this.toastrService.error('Signup failed');
         },
       });
   }
 
   navigate() {
-    this.router.navigate(['signup']);
+    this.router.navigate(['login']);
   }
 }
