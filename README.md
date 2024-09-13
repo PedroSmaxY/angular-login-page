@@ -97,7 +97,7 @@ Make sure to either integrate this application with your own backend or use mock
 
 ## License
 
-### angular-login-page is licensed under the [MIT License](https://github.com/PedroSmaxY/angular-login-page/blob/main/LICENSE).
+### angular-login-page is licensed under the [MIT License](https://github.com/PedroSmaxY/angular-login-page/blob/master/LICENSE).
 
 ## Contributing
 
