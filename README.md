@@ -15,6 +15,9 @@ This project is a **login and registration system** built with **Angular** and *
 - [Screenshots](#screenshots)
 - [Technologies used](#technologies-used)
 - [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [API Endpoints](#api-endpoints)
+- [JWT Authentication Flow](#jwt-authentication-flow)
 - [License](#license)
 - [Contributing](#contributing)
 
@@ -26,6 +29,16 @@ This project is a **login and registration system** built with **Angular** and *
 - **Protected Routes:** Routes are secured and accessible only with valid authentication tokens.
 
 ## Screenshots
+
+### Login Page
+![image](https://github.com/user-attachments/assets/05c156f6-a27f-447a-9e40-e8e87a1f4850)
+
+### Signup Page
+![image](https://github.com/user-attachments/assets/8843bebb-e2ef-4b02-ba9f-592c74dbf66c)
+
+## User Page (Authenticated)
+![image](https://github.com/user-attachments/assets/87d10eed-42ca-4aa9-81b8-b02a21a7ec5f)
+
 
 ## Technologies Used
 
