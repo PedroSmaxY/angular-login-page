@@ -1,27 +1,93 @@
-# LoginPage
+# Angular Login and Registration System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](https://opensource.org/licenses/MIT)
+<br />
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is a **login and registration system** built with **Angular** and **TypeScript**, using **JWT (JSON Web Tokens)** for authentication. It is designed to integrate seamlessly with my [**login-auth-api**](https://github.com/PedroSmaxY/login-auth-api), which handles backend services such as user registration, login, and authentication management.
 
-## Code scaffolding
+## Table of Contents
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Features](#Features)
+- [Screenshots](#screenshots)
+- [Technologies used](#technologies-used)
+- [Prerequisites](#prerequisites)
+- [License](#license)
+- [Contributing](#contributing)
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **User Login:** Allows users to log in with valid credentials.
+- **User Registration:** A registration form for new users.
+- **JWT Authentication:** After a successful login, a JWT token is issued for subsequent requests.
+- **Protected Routes:** Routes are secured and accessible only with valid authentication tokens.
 
-## Running unit tests
+## Screenshots
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technologies Used
 
-## Running end-to-end tests
+- ![Angular](https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular)
+- ![TypeScript](https://img.shields.io/badge/typescript-white?style=for-the-badge&logo=typescript)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Prerequisites
 
-## Further help
+To run this project locally, you'll need:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [**Node.js**](https://nodejs.org/en)
+- [**Angular CLI**](https://angular.dev/tools/cli): Version 18.x or higher
+
+## Getting Started
+
+1. **Clone the Repository:**
+
+```bash
+git clone https://github.com/PedroSmaxY/angular-login-page.git
+```
+
+2. **Navigate to the Project Directory**
+
+```bash
+cd angular-login-page
+```
+
+3. **Install Dependencies:**
+
+```bash
+npm install
+```
+
+4. **Run the Application:**
+
+```bash
+ng serve
+```
+
+1. **Open `http://localhost:4200/`** on your browser.
+
+## API Endpoints
+
+Make sure to either integrate this application with your own backend or use mock APIs for authentication. Alternatively, you can clone and run my [login-auth-api](https://github.com/PedroSmaxY/login-auth-api), specifically designed to work with this application. Example endpoints include:
+
+- Login Endpoint: `/login`
+- Register Endpoint: `/signup`
+- Protected Route: `/user`
+
+# JWT Authentication Flow
+
+1. The user logs in with their email and password.
+2. The server validates the credentials and returns a JWT token.
+3. The token is stored locally (e.g., in `localStorage`).
+4. For every request to a protected route, the token is sent in the authorization header.
+
+## License
+
+### angular-login-page is licensed under the [MIT License](https://github.com/PedroSmaxY/angular-login-page/blob/main/LICENSE).
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to the repository.
+
+When contributing to this project, please follow the existing code style, [commit conventions](https://www.conventionalcommits.org/en/v1.0.0/), and submit your changes in a separate branch.
