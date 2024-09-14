@@ -7,7 +7,7 @@
 
 ## Overview
 
-This project is a **login and registration system** built with **Angular** and **TypeScript**, using **JWT (JSON Web Tokens)** for authentication. It is designed to integrate seamlessly with my [**login-auth-api**](https://github.com/PedroSmaxY/login-auth-api), which handles backend services such as user registration, login, and authentication management.
+This project is a **login and registration system** built with **Angular** and **TypeScript**, using **JWT (JSON Web Tokens)** for authentication. It is designed to integrate seamlessly with my [**login-auth-api**](https://github.com/PedroSmaxY/login-auth-api), which handles backend services such as user registration, login, and authentication management. You can check the site [here](https://pedrosmaxy.github.io/angular-login-page/).
 
 ## Table of Contents
 
@@ -15,6 +15,9 @@ This project is a **login and registration system** built with **Angular** and *
 - [Screenshots](#screenshots)
 - [Technologies used](#technologies-used)
 - [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [API Endpoints](#api-endpoints)
+- [JWT Authentication Flow](#jwt-authentication-flow)
 - [License](#license)
 - [Contributing](#contributing)
 
@@ -26,6 +29,16 @@ This project is a **login and registration system** built with **Angular** and *
 - **Protected Routes:** Routes are secured and accessible only with valid authentication tokens.
 
 ## Screenshots
+
+### Login Page
+![image](https://github.com/user-attachments/assets/05c156f6-a27f-447a-9e40-e8e87a1f4850)
+
+### Signup Page
+![image](https://github.com/user-attachments/assets/8843bebb-e2ef-4b02-ba9f-592c74dbf66c)
+
+## User Page (Authenticated)
+![image](https://github.com/user-attachments/assets/87d10eed-42ca-4aa9-81b8-b02a21a7ec5f)
+
 
 ## Technologies Used
 
@@ -84,7 +97,7 @@ Make sure to either integrate this application with your own backend or use mock
 
 ## License
 
-### angular-login-page is licensed under the [MIT License](https://github.com/PedroSmaxY/angular-login-page/blob/main/LICENSE).
+### angular-login-page is licensed under the [MIT License](https://github.com/PedroSmaxY/angular-login-page/blob/master/LICENSE).
 
 ## Contributing
 
