@@ -36,7 +36,7 @@ This project is a **login and registration system** built with **Angular** and *
 ### Signup Page
 ![image](https://github.com/user-attachments/assets/8843bebb-e2ef-4b02-ba9f-592c74dbf66c)
 
-## User Page (Authenticated)
+### User Page (Authenticated)
 ![image](https://github.com/user-attachments/assets/87d10eed-42ca-4aa9-81b8-b02a21a7ec5f)
 
 
